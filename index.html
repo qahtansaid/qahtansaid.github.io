@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/custom.css" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- bootstrap CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Portofolio</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div id="mynav">
+            <nav class="navbar fixed-top navbar-expand-md bg-light navbar-light">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Qahtan</a>
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link btn btn-link" href="#footer" data-toggle="modal"
+                                data-target="#hire_modal" role="button">Contact Me</button>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="jumbotron">
+            <div class="row d-flex align-items-center">
+                <div class="col">
+                    <p id="hi" class="lead">Hi,</p>
+                    <h1 id="name" class="display-4">I'm Qahtan Said</h1>
+                    <h3 id="profession" class="lead">a Web Developer.</h3>
+                    <hr class="my-3">
+                    <p class="lead">
+                        <a class="btn btn-dark btn-sm" href="./Qahtan_Said_Web_Dev2.pdf" target="_blank"
+                            role="button">View CV</a>
+                        <button id="hire" class="btn btn-outline-dark btn-sm" data-toggle="modal"
+                            data-target="#hire_modal" role="button">Hire Me !</button>
+                    </p>
+                </div>
+                <div id="profile_pic" class="col-md-6 text-center">
+                    <img src="./Images/meh3.png" alt="" height="450">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="hire_modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Contact Me Now !</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-2 text-center"><span class="fa fa-whatsapp"></span> </div>
+                            <div class="col">
+                                <p class="card-text"> +62-821-1297-9256 (WA only)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 text-center"><span class="fa fa-phone"></span> </div>
+                            <div class="col">
+                                <p class="card-text">+62-857-7918-1788</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 text-center"><span class="fa fa-envelope-o"></span> </div>
+                            <div class="col">
+                                <p class="card-text">qahtansaidmartak@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="about" class="card">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-4" data-aos="zoom-in-right" data-aos-duration="2000">
+                    <img src="./Images/profile.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <h4 class="card-title">About Me</h4>
+                        <p class="card-text" style="text-align:justify;">I’m a first child from three siblings, trained
+                            independent. I prefer to
+                            lead than be a boss, so i often do lot of my team task. Furthermore, it's hard for me to
+                            rebuke my team, i prefer to wait for them to realize it alone. I take full responsibility of
+                            my task, i will always finish it on time, because i perfectly aware of my limit. I can
+                            consider risk and advantage, so i never regret for what I've done.</p>
+                        <a href="#skill" class="btn btn-dark">Know Me More !</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container parallax">
+        <h4 class="display-4">My Skills</h4>
+        <div id="skill" class="row" data-aos="zoom-out" data-aos-duration="2000">
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./Images/laravel.png" alt="Card image cap">
+                    <hr class="my-1">
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar bg-dark " style="width:77%">77
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./Images/php.png" alt="Card image cap">
+                    <hr class="my-1">
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar bg-dark" style="width:85%">85
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./Images/nodejs.png" alt="Card image cap">
+                    <hr class="my-1">
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar bg-dark" style="width:80%">80
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./Images/mysql.png" alt="Card image cap">
+                    <hr class="my-1">
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar bg-dark" style="width:83%">83
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./Images/postgresql.png" alt="Card image cap">
+                    <hr class="my-1">
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar bg-dark" style="width:77%">77
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./Images/bootstrap.png" alt="Card image cap">
+                    <hr class="my-1">
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar bg-dark" style="width:80%">80
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./Images/javascript.png" alt="Card image cap">
+                    <hr class="my-1">
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar bg-dark" style="width:80%">80
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="experience" class=" container">
+        <h4 class="display-4">My Experience</h4>
+        <div class="card" data-aos="fade-right" data-aos-duration="2000">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="card-img-top" src="./Images/delameta.png" alt="Card image cap">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <p class="card-text">Internship for Six Months at Software Engineer.</p>
+                        <button class="btn btn-outline-dark disabled">Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row-reverse">
+            <div class="card " data-aos="fade-left" data-aos-duration="2000">
+                <div class="row">
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="card-text">Developed a Web Clinic Management System Using Laravel in Three Months
+                                as a Full Stack Developer.
+                            </p>
+                            <button class="btn btn-outline-dark" data-toggle="modal"
+                                data-target="#infratech">Detail</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="card-img-top" src="./Images/infratech.png" alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="infratech">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Web Clinic Management</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>-General</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (422).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (428).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (434).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (435).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (436).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (437).png" alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <p>-Patient</p>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (422).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (428).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (438).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (439).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (440).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (441).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (442).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (443).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (444).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (445).png" alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <p>-Doctor</p>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (430).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (428).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (446).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (447).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (448).png" alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <p>-Pharmacist</p>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (431).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (432).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (433).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (449).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (450).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (451).png" alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <p>-Admin</p>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (424).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (425).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (426).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (427).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (429).png" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img class="proj_img" src="./Images/Infratech/Screenshot (452).png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal_proj d-none">
+        <button type="button" class="btn" id="close_proj"><span class="fa fa-times"></span></button>
+        <img id="view_proj" src="" alt="" class="img-fluid">
+    </div>
+
+    <div id="footer" class="container-fluid">
+        <div class="card-body row">
+            <div class="col">
+                <div class="row">
+                    <div class="col-md-2 text-center"><span class="fa fa-map-marker"></span> </div>
+                    <div class="col">
+                        <p class="card-text"> JL. T No. 29A RT.03/10 KEBON BARU, TEBET –
+                            JAKARTA SELATAN</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 text-center"><span class="fa fa-whatsapp"></span> </div>
+                    <div class="col">
+                        <p class="card-text"> +62-821-1297-9256 (WA only)</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 text-center"><span class="fa fa-phone"></span> </div>
+                    <div class="col">
+                        <p class="card-text">+62-857-7918-1788</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 text-center"><span class="fa fa-envelope-o"></span> </div>
+                    <div class="col">
+                        <p class="card-text">qahtansaidmartak@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4 class="card-title">Social Media</h4>
+                <P class="card-text">Follow Me on My Social Media Below !</P>
+                <br>
+                <div class="row">
+                    <div class="col-md-1">
+                        <a href="https://www.linkedin.com/in/qahtan-said-235744194/" target="_blank"
+                            class="btn btn_linkedin" role="button" aria-disabled="true"><span
+                                class="fa fa-linkedin"></span> </a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="https://www.instagram.com/qahtanmartak/" target="_blank" class="btn btn_instagram"
+                            role="button" aria-disabled="true"><span class="fa fa-instagram"></span> </a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="https://twitter.com/qahtansaid" target="_blank" class="btn btn_twitter" role="button"
+                            aria-disabled="true"><span class="fa fa-twitter"></span> </a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="https://web.facebook.com/martak.qahtan" target="_blank" class="btn btn_facebook"
+                            role="button" aria-disabled="true"><span class="fa fa-facebook-official"></span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //alert("Hi, I'm using CDN, Please Enable Your Internet. Thank You !")
+        AOS.init();
+        $(".proj_img").click(function () {
+            let proj_id = $(this).attr("src");
+            $("#view_proj").attr("src", proj_id);
+            $(".modal_proj").removeClass('d-none');
+        });
+        $("#close_proj").click(function () {
+            $(".modal_proj").addClass('d-none');
+        })
+    </script>
+</body>
+
+</html>

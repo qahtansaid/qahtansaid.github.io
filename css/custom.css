@@ -1,249 +1,242 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 #Structure {
-    animation: struct 1.2s ease;
-    transform-origin: center;
-    transform-box: fill-box;
+  animation: struct 1.2s ease;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
 @keyframes struct {
-    0% {
-        transform: translate3d(500px, 0px, 0px);
-    }
+  0% {
+    transform: translate3d(500px, 0px, 0px);
+  }
 
-    100% {
-        transform: translate3d(0px, 0px, 0px);
-    }
-
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
 }
 
 #Man {
-    animation: sit 1.2s ease;
-    transform-origin: center;
-    transform-box: fill-box;
+  animation: sit 1.2s ease;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
 @keyframes sit {
-    0% {
-        transform: translate3d(0px, -500px, 0px);
-    }
+  0% {
+    transform: translate3d(0px, -500px, 0px);
+  }
 
-    100% {
-        transform: translate3d(0px, 0px, 0px);
-    }
-
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
 }
 
 #hire {
-    animation: hire 0.7s alternate infinite;
-    transform-origin: center;
-    transform-box: fill-box;
+  animation: hire 0.7s alternate infinite;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
 @keyframes hire {
-    0% {
-        transform: rotateZ(-15deg);
-    }
+  0% {
+    transform: rotateZ(-15deg);
+  }
 
-    50% {
-        transform: rotateZ(5deg);
-    }
+  50% {
+    transform: rotateZ(5deg);
+  }
 
-    100% {
-        transform: rotateZ(-15deg);
-    }
+  100% {
+    transform: rotateZ(-15deg);
+  }
 }
 
 #hi {
-    animation: hire 0.7s alternate 3;
-    transform-origin: center;
-    transform-box: fill-box;
+  animation: hire 0.7s alternate 3;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
 @keyframes hire {
-    0% {
-        transform: rotateZ(0deg);
-    }
+  0% {
+    transform: rotateZ(0deg);
+  }
 
-    50% {
-        transform: rotateZ(5deg);
-    }
+  50% {
+    transform: rotateZ(5deg);
+  }
 
-    100% {
-        transform: rotateZ(0deg);
-    }
+  100% {
+    transform: rotateZ(0deg);
+  }
 }
 
 #name {
-    animation: name 1s ease;
-    transform-origin: center;
-    transform-box: fill-box;
+  animation: name 1s ease;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
 @keyframes name {
-    0% {
-        transform: translate3d(-500px, 0px, 0px);
-    }
+  0% {
+    transform: translate3d(-500px, 0px, 0px);
+  }
 
-    100% {
-        transform: translate3d(0px, 0px, 0px);
-    }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
 }
 
 #profession {
-    animation: profession 2.3s ease;
-    transform-origin: center;
-    transform-box: fill-box;
+  animation: profession 2.3s ease;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
 @keyframes profession {
-    0% {
-        transform: translate3d(-500px, 0px, 0px);
-    }
+  0% {
+    transform: translate3d(-500px, 0px, 0px);
+  }
 
-    100% {
-        transform: translate3d(0px, 0px, 0px);
-    }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
 }
 
 #about {
-    padding: 40px;
-    margin-top: -150px;
-    margin-left: 5%;
-    margin-right: 5%;
-    border-radius: 30px;
-    margin-bottom: 30px;
-    box-shadow: 5px 5px grey;
+  padding: 40px;
+  margin-top: -150px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px grey;
 }
 
 .card {
-    padding: 10px;
-    margin-top: 10px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .parallax {
-    background-image: url("../Images/background1.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 20px;
+  background-image: url("../Images/background1.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
 }
 
-
 #skill img {
-    height: 8rem;
-    width: auto;
-    padding: 20px;
-
+  height: 8rem;
+  width: auto;
+  padding: 20px;
 }
 
 #experience {
-    margin-top: 20px;
-
+  margin-top: 20px;
 }
 
 #experience img {
-    height: 7rem;
-
+  height: 7rem;
 }
 
 #experience .card {
-    width: 70%;
-    margin-top: 10px;
-    background-color: #e9ecef;
-
+  width: 70%;
+  margin-top: 10px;
+  background-color: #e9ecef;
 }
 
 #footer {
-    background-color: #000000;
-    color: #ffffff;
-    margin-top: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: 20px;
 }
 
 #footer p {
-    font-size: 12px;
-    margin: 0px;
+  font-size: 12px;
+  margin: 0px;
 }
 
 .btn_linkedin {
-    background-color: #0E76A8 !important;
-    margin: 5px !important;
-    color: #ffffff !important;
-
+  background-color: #0e76a8 !important;
+  margin: 5px !important;
+  color: #ffffff !important;
 }
 
 .btn_instagram {
-    background-color: #DD2A7B !important;
-    margin: 5px !important;
-    color: #ffffff !important;
-
-
+  background-color: #dd2a7b !important;
+  margin: 5px !important;
+  color: #ffffff !important;
 }
 
 .btn_twitter {
-    background-color: #00ACEE !important;
-    margin: 5px !important;
-    color: #ffffff !important;
-
+  background-color: #00acee !important;
+  margin: 5px !important;
+  color: #ffffff !important;
 }
 
 .btn_facebook {
-    background-color: #3B5998 !important;
-    margin: 5px !important;
-    color: #ffffff !important;
-
+  background-color: #3b5998 !important;
+  margin: 5px !important;
+  color: #ffffff !important;
 }
 
 .modal_exp img {
-    height: 100px;
-    margin-top: 10px;
+  height: 100px;
+  margin-top: 10px;
 }
 
 .modal_exp img:hover {
-    opacity: 0.3;
-    transition: 0.1s;
-    transform: scale(1.2);
+  opacity: 0.3;
+  transition: 0.1s;
+  transform: scale(1.2);
 }
 
 .modal_proj {
-    position: fixed;
-    /* Stay in place */
-    padding-top: 100px;
-    margin: 0;
-    /* Sit on top */
-    /* Location of the box */
-    z-index: 999999999999999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: hidden;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
+  position: fixed;
+  /* Stay in place */
+  padding-top: 100px;
+  margin: 0;
+  /* Sit on top */
+  /* Location of the box */
+  z-index: 999999999999999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: hidden;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
 
 #view_proj {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 800px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 800px;
 }
 
 .modal_proj button {
-    position: absolute;
-    top: 30px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
+/* 
+@media (max-width: 550px) {
+  .card img {
+    max-width: 10rem !important;
+  }
+} */

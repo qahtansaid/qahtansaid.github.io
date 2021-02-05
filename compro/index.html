@@ -10,6 +10,7 @@
     />
     <!-- vendor css -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/img/logo.png" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400%7COpen+Sans:400,300"
@@ -117,7 +118,11 @@
       <section id="intro" class="about container">
         <div class="row content">
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/doctor.svg" class="img-fluid" alt="" />
+            <img
+              src="assets/img/doctor.svg "
+              class="img-fluid profile-img"
+              alt=""
+            />
           </div>
           <div
             class="col-lg-6 pt-4 pt-lg-0"
@@ -177,7 +182,7 @@
                 <i class="icofont-heart-beat-alt icofont-5x text-danger"></i>
               </div>
               <div class="service-txt">
-                <div class="service-title">Emergency Care</div>
+                <div class="service-title dark-color">Emergency Care</div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </div>
@@ -186,10 +191,10 @@
               class="col-md-4 d-flex justify-content-center align-items-center flex-column"
             >
               <div class="service-logo">
-                <i class="icofont-crutch icofont-5x my-color text-dark"></i>
+                <i class="icofont-crutch icofont-5x text-dark"></i>
               </div>
               <div class="service-txt">
-                <div class="service-title">Intensive Care</div>
+                <div class="service-title dark-color">Intensive Care</div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </div>
@@ -201,7 +206,7 @@
                 <i class="icofont-surgeon icofont-5x text-success"></i>
               </div>
               <div class="service-txt">
-                <div class="service-title">Medical Equiplment</div>
+                <div class="service-title dark-color">Medical Equiplment</div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </div>
@@ -211,7 +216,7 @@
       </section>
 
       <section id="profile">
-        <div class="container-fluid">
+        <div class="container">
           <div class="section-title">
             <h2>Our Story</h2>
           </div>
@@ -226,7 +231,9 @@
             <div
               class="col d-flex justify-content-center align-items-center text-center flex-column"
             >
-              <h3 class="text-uppercase">Solid Team</h3>
+              <h3 class="text-uppercase dark-color font-weight-bold">
+                Solid Team
+              </h3>
               Experienced and dedicated team, provides a comprehensive and
               one-stop solution to its customers with a focus on a number of key
               specialties including Intensive Care, Emergency Care, Operating
@@ -237,7 +244,9 @@
             <div
               class="col d-flex justify-content-center align-items-center text-center flex-column"
             >
-              <h3 class="text-uppercase">Solid Company</h3>
+              <h3 class="text-uppercase dark-color font-weight-bold">
+                Solid Company
+              </h3>
               Collaboration partnership with reliable international partners
               with proven record as one of biggest manufacturer in the world,
               showing the trust for many years.
@@ -262,7 +271,9 @@
             <div
               class="col d-flex justify-content-center align-items-center text-center flex-column"
             >
-              <h3 class="text-uppercase">Solid Value</h3>
+              <h3 class="text-uppercase dark-color font-weight-bold">
+                Solid Value
+              </h3>
               Always improved our self as we delivered the best solutions with
               the best products more than beyond healthcare.
             </div>
@@ -645,22 +656,16 @@
                 </div>
               </div>
 
-              <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                class="php-email-form mt-4"
-              >
+              <form role="form" class="php-email-form mt-4" id="ticketForm">
                 <div class="form-row">
                   <div class="col-md-6 form-group">
                     <input
                       type="text"
                       name="name"
                       class="form-control"
-                      id="name"
+                      id="cust_name"
                       placeholder="Your Name"
-                      data-rule="minlen:4"
-                      data-msg="Please enter at least 4 chars"
+                      required
                     />
                     <div class="validate"></div>
                   </div>
@@ -669,10 +674,9 @@
                       type="email"
                       class="form-control"
                       name="email"
-                      id="email"
+                      id="cust_email"
                       placeholder="Your Email"
-                      data-rule="email"
-                      data-msg="Please enter a valid email"
+                      required
                     />
                     <div class="validate"></div>
                   </div>
@@ -684,8 +688,6 @@
                     name="subject"
                     id="subject"
                     placeholder="Subject"
-                    data-rule="minlen:4"
-                    data-msg="Please enter at least 8 chars of subject"
                   />
                   <div class="validate"></div>
                 </div>
@@ -694,9 +696,8 @@
                     class="form-control"
                     name="message"
                     rows="5"
-                    data-rule="required"
-                    data-msg="Please write something for us"
-                    placeholder="Message"
+                    id="message"
+                    required
                   ></textarea>
                   <div class="validate"></div>
                 </div>
@@ -818,6 +819,11 @@
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/venobox.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- my js -->
     <script src="assets/js/main.js"></script>

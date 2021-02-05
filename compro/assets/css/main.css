@@ -3,9 +3,14 @@
   padding: 0;
   /* height: 100vh; */
 }
+html,
+body {
+  overflow-x: hidden;
+}
 html {
   scroll-behavior: smooth;
 }
+h1,
 h2,
 h3,
 h4 {
@@ -690,9 +695,14 @@ div.swiper-button-next {
   color: #000;
   margin-bottom: 5px;
 }
-
-.my-color {
-  color: #085dd7 !important;
+.thin-color {
+  color: #59bb4a !important;
+}
+.mid-color {
+  color: #3c9940 !important;
+}
+.dark-color {
+  color: #337f41 !important;
 }
 
 .my-card-title {
@@ -957,7 +967,6 @@ img {
   background-color: #337f41;
   color: #fff;
 }
-
 .btn-us:hover {
   background-color: #59bb4a;
   color: #fff;
@@ -974,4 +983,10 @@ img {
 
   max-height: 200px !important;
   display: flex;
+}
+.profile-img {
+  transition: 1s;
+}
+.profile-img:hover {
+  transform: scale(1.2);
 }

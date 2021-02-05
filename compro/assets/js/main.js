@@ -93,11 +93,56 @@
       mirror: false,
     });
   }
+
+  //AOS
   $(window).on("load", function () {
     aos_init();
   });
 
+  //venobox
   $(document).ready(function () {
     $(".venobox").venobox();
+  });
+
+  //EmailJS
+  $(document).ready(function () {
+    emailjs.init("user_ou24vEuSDtE3gwIgjyb45");
+  });
+
+  $("#ticketForm").submit(function (evt) {
+    evt.preventDefault();
+    let cust_name = $("#cust_name").val();
+    let cust_email = $("#cust_email").val();
+    let subject = $("#subject").val();
+    let message = $("#message").val();
+    var templateParams = {
+      cust_name,
+      cust_email,
+      subject,
+      message,
+    };
+    emailjs.send("service_vlld6cm", "template_j0d7omr", templateParams).then(
+      function (response) {
+        console.log("ticket : ", response);
+        if (response.status == 200) {
+          swal("Email has been sent!", "We will contact you ASAP!", "success");
+          $("#ticketForm").trigger("reset");
+        } else {
+          swal(
+            "Oops. Failed!",
+            "Please try again later, or contact us directly!",
+            "error"
+          );
+        }
+      },
+      function (error) {
+        console.log("ticket error: ", error);
+        swal(
+          "Oops. Failed!",
+          "Please try again later, or contact us directly!",
+          "error"
+        );
+      }
+    );
   });
 })(jQuery);

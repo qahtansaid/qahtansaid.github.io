@@ -27,7 +27,7 @@ h4 {
   font-weight: bold;
 }
 .nav-item a:hover {
-  color: #000 !important;
+  color: #f7af17 !important;
   font-weight: bold;
 }
 .small-padding {
@@ -610,7 +610,7 @@ div.swiper-button-next {
 }
 
 .back-to-top i:hover {
-  background: #f7af17;
+  background: #fff;
   color: #f7af17;
 }
 

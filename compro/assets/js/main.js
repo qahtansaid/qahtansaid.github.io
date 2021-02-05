@@ -4,7 +4,7 @@
   $(window).on("load", function () {
     if ($("#preloader").length) {
       $("#preloader")
-        .delay(100)
+        .delay(1000)
         .fadeOut("slow", function () {
           $(this).remove();
         });
@@ -95,5 +95,9 @@
   }
   $(window).on("load", function () {
     aos_init();
+  });
+
+  $(document).ready(function () {
+    $(".venobox").venobox();
   });
 })(jQuery);

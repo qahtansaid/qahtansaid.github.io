@@ -6,6 +6,14 @@
 html {
   scroll-behavior: smooth;
 }
+h2,
+h3,
+h4 {
+  font-family: "raleway" !important;
+}
+.modal {
+  overflow-y: 300px !important;
+}
 .nav-item a {
   color: #fff !important;
   font-weight: bold;
@@ -32,7 +40,6 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-origin: content-box;
 }
 .text-carousel {
   z-index: 100;
@@ -50,15 +57,39 @@ section {
   z-index: 1000;
   transition: all 0.5s;
 }
+/* , #3c9940 0%, #337f41 0% */
 .navbar {
-  background: #00c28e !important;
+  background: linear-gradient(
+    45deg,
+    #59bb4a 0,
+    #59bb4a 60%,
+    #3c9940 60%,
+    #3c9940 70%,
+    #337f41 70%,
+    #337f41 100%
+  );
 }
 .navbar-brand {
   color: #000 !important;
   font-weight: bold;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.navbar-brand img {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 #header.header-scrolled {
-  background: #00c28e !important;
+  background: linear-gradient(
+    45deg,
+    #59bb4a 0,
+    #59bb4a 60%,
+    #3c9940 60%,
+    #3c9940 70%,
+    #337f41 70%,
+    #337f41 100%
+  );
+
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   top: 0;
 }
@@ -190,7 +221,7 @@ section {
   display: block;
   width: 200px;
   height: 5px;
-  background: #009970;
+  background: #085dd7;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
@@ -212,7 +243,7 @@ section {
   display: block;
   width: 200px;
   height: 5px;
-  background: #009970;
+  background: #085dd7;
   bottom: 0;
   left: 0;
 }
@@ -422,7 +453,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #009970;
+  color: #337f41;
 }
 
 #footer .footer-newsletter {
@@ -462,7 +493,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #009970;
+  background: #337f41;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -482,7 +513,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #009970;
+  background: #337f41;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -553,7 +584,8 @@ div.swiper-button-next {
   display: none;
   right: 25px;
   bottom: 25px;
-  z-index: 99999;
+  z-index: 99;
+  text-decoration: none !important;
 }
 
 .back-to-top i {
@@ -564,14 +596,14 @@ div.swiper-button-next {
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  background: #009970;
+  background: #f7af17;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #00805d;
-  color: #fff;
+  background: #f7af17;
+  color: #f7af17;
 }
 
 /* timeline */
@@ -633,6 +665,7 @@ div.swiper-button-next {
   width: 100%;
   display: flex;
 }
+
 .service-img {
   flex: 1;
   padding: 20px;
@@ -654,11 +687,22 @@ div.swiper-button-next {
 .service-title {
   font-weight: bolder !important;
   text-transform: uppercase !important;
-  color: #00805d;
+  color: #000;
+  margin-bottom: 5px;
 }
 
 .my-color {
-  color: #00805d !important;
+  color: #085dd7 !important;
+}
+
+.my-card-title {
+  font-size: 5vh;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 /*--------------------------------------------------------------
@@ -677,7 +721,7 @@ div.swiper-button-next {
   float: left;
   width: 44px;
   height: 44px;
-  background: #009970;
+  background: #337f41;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -777,7 +821,7 @@ div.swiper-button-next {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #009970;
+  background: #337f41;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -808,7 +852,7 @@ div.swiper-button-next {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #0563bb;
+  border: 6px solid #337f41;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -834,4 +878,100 @@ div.swiper-button-next {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+.why-us .content {
+  padding: 30px;
+  background: #337f41;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.why-us .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.why-us .content p {
+  margin-bottom: 30px;
+}
+
+.why-us .content .more-btn {
+  display: inline-block;
+  background-color: #59bb4a;
+  /* background: rgba(255, 255, 255, 0.1); */
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.why-us .content .more-btn i {
+  font-size: 14px;
+}
+
+.why-us .content .more-btn:hover {
+  color: #337f41;
+  background: #fff;
+}
+
+.why-us .icon-boxes .icon-box {
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  width: 100%;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.why-us .icon-boxes .icon-box i,
+img {
+  font-size: 40px;
+  color: #337f41;
+  margin-bottom: 30px;
+}
+
+.why-us .icon-boxes .icon-box h4 {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0 0 30px 0;
+}
+
+.why-us .icon-boxes .icon-box p {
+  font-size: 15px;
+  color: #848484;
+}
+
+.why-us .icon-boxes .icon-box:hover {
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+}
+.btn-us {
+  background-color: #337f41;
+  color: #fff;
+}
+
+.btn-us:hover {
+  background-color: #59bb4a;
+  color: #fff;
+}
+.product-shadow {
+  height: 200px !important;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-shadow img {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+
+  max-height: 200px !important;
+  display: flex;
 }

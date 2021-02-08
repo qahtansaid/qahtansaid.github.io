@@ -105,9 +105,9 @@
   });
 
   //EmailJS
-  $(document).ready(function () {
-    emailjs.init("user_ou24vEuSDtE3gwIgjyb45");
-  });
+  // $(document).ready(function () {
+  //   emailjs.init("user_ou24vEuSDtE3gwIgjyb45");
+  // });
 
   $("#ticketForm").submit(function (evt) {
     evt.preventDefault();
@@ -116,33 +116,50 @@
     let subject = $("#subject").val();
     let message = $("#message").val();
     var templateParams = {
-      cust_name,
-      cust_email,
-      subject,
-      message,
+      user_name: cust_name,
+      user_email: cust_email,
+      msg_subject: subject,
+      msg_body: message,
     };
-    emailjs.send("service_vlld6cm", "template_j0d7omr", templateParams).then(
-      function (response) {
-        console.log("ticket : ", response);
-        if (response.status == 200) {
-          swal("Email has been sent!", "We will contact you ASAP!", "success");
-          $("#ticketForm").trigger("reset");
-        } else {
-          swal(
-            "Oops. Failed!",
-            "Please try again later, or contact us directly!",
-            "error"
-          );
-        }
+    console.log(JSON.stringify(templateParams));
+    $.ajax("http://localhost:8000/mailer", {
+      type: "POST",
+      data: JSON.stringify(templateParams),
+      success: function (data, status, xhr) {
+        swal("Email has been sent!", "We will contact you ASAP!", "success");
+        $("#ticketForm").trigger("reset");
       },
-      function (error) {
-        console.log("ticket error: ", error);
+      error: function (jqXhr, textStatus, errorMessage) {
         swal(
           "Oops. Failed!",
           "Please try again later, or contact us directly!",
           "error"
         );
-      }
-    );
+      },
+    });
+
+    // emailjs.send("service_vlld6cm", "template_j0d7omr", templateParams).then(
+    //   function (response) {
+    //     console.log("ticket : ", response);
+    //     if (response.status == 200) {
+    //       swal("Email has been sent!", "We will contact you ASAP!", "success");
+    //       $("#ticketForm").trigger("reset");
+    //     } else {
+    //       swal(
+    //         "Oops. Failed!",
+    //         "Please try again later, or contact us directly!",
+    //         "error"
+    //       );
+    //     }
+    //   },
+    //   function (error) {
+    //     console.log("ticket error: ", error);
+    //     swal(
+    //       "Oops. Failed!",
+    //       "Please try again later, or contact us directly!",
+    //       "error"
+    //     );
+    //   }
+    // );
   });
 })(jQuery);
